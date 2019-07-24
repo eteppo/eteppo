@@ -5,7 +5,7 @@ author = "Eero Teppo"
 date = "2015-04-16"
 +++
 
-*This is my 2015 learning diary from a very short health science ethics course. It is hardly a "project" but I think this is still the most appropriate place for it.*
+*This is my 2015 learning diary from a very short health science ethics course.*
 
 ## Introduction
 
