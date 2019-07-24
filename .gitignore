@@ -1,4 +1,3 @@
 # local builds
 public/
-# IDE
-.Rproj.user
+# locally built resources/ is included as a Netlify workaround.

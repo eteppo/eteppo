@@ -1,5 +1,5 @@
 ---
-title: The Science of the Day
+title: Briefly explained
 
 # View.
 #   1 = List

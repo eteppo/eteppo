@@ -1,11 +1,11 @@
 +++
-title = "Oikea eliniän ennusteesi on noin 75-???? vuotta"
+title = "Eliniän ennusteesi on 75-1000 vuotta, ei 84"
 date = "2019-06-06"
 +++
 
-Eliniästä vallitsee valtava väärinkäsitys. Kun tulet siitä tietoiseksi, alat huomaamaan sen vaikutuksen kaikkialla.
+Eliniästä vallitsee valtava väärinkäsitys ja tulet huomaamaan sen kaikkialla.
 
-Oletamme nimittäin virheellisesti ikääntyvämme ja kuolevamme aivan kuin kaikki muutkin sukupolvet koko ihmiskunnan historian ajan. Keskimääräinen kuolinikä on Suomessa nyt noin 84 vuotta ja tätä sovelletaan eliniän ennusteena virheellisesti syntyviin lapsiin.
+Monet ihmiset olettavat nimittäin virheellisesti, että ihmiset tulevat ikääntymään tulevaisuudessa aivan kuin ennenkin. Keskimääräinen kuolinikä on Suomessa nyt noin 84 vuotta ja tätä sovelletaan eliniän ennusteena virheellisesti syntyviin lapsiin.
 
 Lääketieteen kehitys tällä vuosisadalla muuttaa eliniän ennusteen kuitenkin täydellisesti – nykytieteen valossa hyvin mahdollisesti jo sinun elämäsi aikana.
 

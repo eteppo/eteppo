@@ -3,7 +3,7 @@ title = "Miten ratkaisemme ikääntymisen?"
 date = "2019-06-07"
 +++
 
-*Tämä on tieteellisen kirjoittamisen kurssille kirjoittamani essee ikääntymisestä vuodelta 2018. Suosittelen ennen kaikkea lukemaan lähteenä olleet kaksi loistavaa katsausartikkelia (kts. Viitteet).*
+*Tämä on kurssille kirjoittamani essee ikääntymisestä vuodelta 2018. Suosittelen ennen kaikkea lukemaan lähteenä olleet kaksi loistavaa katsausartikkelia (kts. Viitteet).*
 
 ## Johdanto
 
