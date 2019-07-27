@@ -1,5 +1,5 @@
 +++
-title = "Eliniän ennusteesi on 75-1000 vuotta, ei 84"
+title = "Eliniän ennusteesi on 75-1000 vuotta"
 date = "2019-06-06"
 +++
 
