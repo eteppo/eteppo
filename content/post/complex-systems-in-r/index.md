@@ -30,7 +30,7 @@ variable called *x*, a parameter called *a*, and the time *t*. This
 system follows a simple rule that can be described in the language of
 mathematics like this.
 
-<img src="system-2-math.png" width="444" />
+<img src="system-1-math.png" width="444" />
 
 In English, the value of *x* at any time point *t* is always it’s value
 at the previous time point multiplied by some number *a*.
