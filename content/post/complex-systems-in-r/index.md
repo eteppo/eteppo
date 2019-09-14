@@ -1,8 +1,6 @@
 +++
 title = "Introduction to Complex Systems (in R)"
 date = "2019-09-14"
-highlight = true
-highlight_languages = ["r"]
 +++
 
 *This post is based on the wonderful CC-licensed book, “Introduction to
@@ -758,12 +756,118 @@ But because agent-based modelling is general, you can basically use it
 as the framework to model the most simple systems too which makes it a
 really powerful tool.
 
-Let’s build a model 200 agents with features *x*, *y*, and *t**y**p**e*.
-The rule is that the agents jump randomly in the grid until they find a
+Let’s build a model 200 agents with features *x*, *y*, and *type*. The
+rule is that the agents jump randomly in the grid until they find a
 neighborhood with a certain proportion of agents of the same type. You
 could think of this as another simple model of social segregation.
 
 Let’s get coding.
+
+``` r
+initialize_system <- function() {
+
+    n_agents <<- 200
+    radius <<- 0.2
+    threshold <<- 0.6
+
+    # classes have upper-cased first letters by general convention
+    # we use R's Reference Class (RC) system; it works just like Python classes etc.
+    Agent <<- setRefClass(
+        Class = "Agent",
+        # variables
+        fields = list(
+            id = "numeric",
+            type = "numeric", 
+            x = "numeric", 
+            y = "numeric", 
+            time = "numeric"
+        )
+    )
+    
+    measurements <<- tibble(.rows = 0)
+    
+    agents <<- list()
+    for (i in 1:n_agents) {
+        agent <- Agent()
+        
+        agent$id <- i 
+        agent$type <- rbinom(n = 1, size = 1, prob = 0.5)
+        agent$x <- runif(n = 1, min = 0, max = 1)
+        agent$y <- runif(n = 1, min = 0, max = 1)
+        agent$time <- 0
+        
+        agents <<- append(agents, agent)
+    }
+}
+
+measure_state <- function() {
+
+    for (agent in agents) {
+        
+        agent_state <- tibble(
+            id = agent$id,
+            type = agent$type, 
+            x = agent$x, 
+            y = agent$y, 
+            time = agent$time
+        )
+        
+        measurements <<- bind_rows(measurements, agent_state)
+    }
+}
+
+update_state <- function() {
+    
+    next_agents <- list()
+    # shuffle order of agents
+    agents <<- sample(agents)
+    
+    for (agent in agents) {
+        
+        neighbor_types <- c()
+        for (neighbor in agents) {
+            
+            distance <- ((agent$x - neighbor$x)^2 + (agent$y - neighbor$y)^2)
+            is_within_radius <- distance < radius^2
+            not_self <- agent$id != neighbor$id
+            is_neighbor <- not_self & is_within_radius
+            
+            if (is_neighbor == TRUE) {
+                neighbor_types <- append(neighbor_types, neighbor$type)
+            }
+        }
+        
+        if (length(neighbor_types) > 0) {
+            
+            proportion_same_type <- sum(neighbor_types == agent$type) / 
+                                    length(neighbor_types)
+            
+            if (proportion_same_type < threshold) {
+                agent$x <- runif(n = 1, min = 0, max = 1)
+                agent$y <- runif(n = 1, min = 0, max = 1)
+            }
+            
+        }
+        
+        agent$time <- agent$time + 1
+        
+        next_agents <- append(next_agents, agent)
+    }
+    
+    agents <<- next_agents
+}
+
+initialize_system()
+
+pb <- progress::progress_bar$new(total = 20)
+
+for (i in 1:20) {
+    pb$tick()
+    
+    update_state() 
+    measure_state()
+}
+```
 
 ![](system-10.gif)
 

@@ -912,11 +912,11 @@ Agent-based models are most naturally described in the language of [object-orien
 
 But because agent-based modelling is general, you can basically use it as the framework to model the most simple systems too which makes it a really powerful tool.
 
-Let's build a model 200 agents with features $x$, $y$, and $type$. The rule is that the agents jump randomly in the grid until they find a neighborhood with a certain proportion of agents of the same type. You could think of this as another simple model of social segregation.
+Let's build a model 200 agents with features $x$, $y$, and *type*. The rule is that the agents jump randomly in the grid until they find a neighborhood with a certain proportion of agents of the same type. You could think of this as another simple model of social segregation.
 
 Let's get coding.
 
-```{r, echo = FALSE, eval = FALSE}
+```{r, eval = FALSE}
 initialize_system <- function() {
 
     n_agents <<- 200
