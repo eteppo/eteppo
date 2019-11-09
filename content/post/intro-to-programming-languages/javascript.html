@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<!-- weird arrows for HTML comments -->
+<!-- get set of programs called d3 from internet --> 
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script>
+// double front slash for JavaScript comments
+// define size of window
+// const throws error if anyone reassigns to same name
+// comma allows listing assignments on single row
+const width = 960, height = 500;
+// define circles as data objects with features
+// { key: value } is a data structure
+// represent circle as { key: value, ... } data structure
+// range() creates many of them [{ : }, { : }, ...]
+// map adds "radius: random" to each { : } object
+let nodes = d3.range(0, 200, 1).map(generateRandom);
+// first { : } object (node) represents cursor tip
+let root = nodes[0];
+root.radius = 0;
+root.fixed = true;
+// get and configure a force simulation program
+// force becomes { key: function(), start: start(), ... }
+const force = d3.layout.force()
+    .gravity(0.05)
+    .charge(setCharge)
+    .nodes(nodes)
+    .size([width, height]);
+// add main svg html-tag to body-tag
+// svg (support vector graphics) is html for drawing
+// svg variable is now [[<svg ... >]] data structure
+let svg = d3.select("body")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+const color = d3.scale.category10();
+function getColor(node, index) { return color(index % 3); }
+
+// add circle-tags to the svg first time
+function initializeCircles() {
+  // create placeholders for circle-tags to svg
+  svg.selectAll("circle")
+    // bind data (except the first root node) to svg
+    .data(nodes.slice(1))
+    // when circles should appear to page...
+    .enter()
+    // ...add circle-tags to the svg
+    .append("circle")
+    // set radiuses of circle-tags to one from data
+    .attr("r", getRadius)
+    // set color of circle-tags to ones from coloring program
+    .style("fill", getColor);
+}
+
+// Math is a built-in set of mathematical programs
+function generateRandom() { 
+  return { radius: Math.random() * 12 + 4 }; 
+}
+// "? :" is short-hand syntax for "if else"
+// all index numbers except 0 evaluate to true
+function setCharge(node, index) { return index ? 0 : -2000; }
+function getRadius(node) { return node.radius; }
+// category10() from d3.scale returns a coloring function
+function updatePositions(error) {
+  // quadtree transforms data so that no need to compare all pairs
+  let q = d3.geom.quadtree(nodes),
+      i = 0,
+      n = nodes.length;
+  // 
+  while (++i < n) q.visit(makeCollisionFunction(nodes[i]));
+
+  svg.selectAll("circle")
+      // anonymous getter functions
+      // set circle-tag positions to ones from data
+      .attr("cx", function(node) { return node.x; })
+      .attr("cy", function(node) { return node.y; });
+}
+
+function updateRoot() {
+  var p1 = d3.mouse(this);
+  root.px = p1[0];
+  root.py = p1[1];
+  force.resume();
+}
+
+function makeCollisionFunction(node) {
+  
+  var r = node.radius + 16,
+      nx1 = node.x - r,
+      nx2 = node.x + r,
+      ny1 = node.y - r,
+      ny2 = node.y + r;
+
+  return function(quad, x1, y1, x2, y2) {
+    // 
+    if (quad.point && (quad.point !== node)) {
+
+      var x = node.x - quad.point.x,
+          y = node.y - quad.point.y,
+          l = Math.sqrt(x * x + y * y),
+          r = node.radius + quad.point.radius;
+      
+      if (l < r) {
+        l = (l - r) / l * .5;
+        node.x -= x *= l;
+        node.y -= y *= l;
+        quad.point.x += x;
+        quad.point.y += y;
+      }
+    }
+    
+    return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+  
+  };
+}
+
+force.start();
+initializeCircles();
+force.on("tick", updatePositions);
+svg.on("mousemove", updateRoot);
+
+</script>
