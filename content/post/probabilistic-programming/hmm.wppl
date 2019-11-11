@@ -1,0 +1,39 @@
+// data
+const data = {obs: [true, false, false, false]};
+
+// If the hidden state is true, next hidden state is 70 % true
+let transition = function(state) {
+  return state ? flip(0.7) : flip(0.3);
+}
+// If the hidden state is true, the observed variable is 90 % true
+let observation = function(state) {
+  return state ? flip(0.9) : flip(0.1);
+}
+
+let simulate = function(n_trans) {
+  // recurse until n_trans is 1 and start from state true
+  // then previous will be assigned to the previous returned dictionary
+  let previous = (n_trans == 1) ? {states: [true], obs: []} : simulate(n_trans - 1);
+  // transition to new hidden state
+  let newState = transition(previous.states[previous.states.length - 1]);
+  // measure value of the observeable variable related to the state
+  let newObs = observation(newState);
+  // merge previous and new data
+  return {
+    states: previous.states.concat([newState]),
+    obs: previous.obs.concat([newObs])
+  }
+}
+
+let model = function() {
+  // run simulations similar to data
+  let results = simulate(data.obs.length);
+  // soft-condition inference on observed data
+  factor(_.isEqual(results.obs, data.obs) ? 0 : -Infinity);
+  return results.states
+}
+// run inference
+let distribution = Infer({method: "enumerate"}, model);
+// print results
+console.log(distribution);
+// hidden states were [true, false, false, false] with 75 % probability
