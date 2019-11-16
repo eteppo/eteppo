@@ -17,7 +17,7 @@ description = ""
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
 sharing_image = ""
 
-# Twitter username (without @). Used when a vistor shares your site on Twitter.
+# Twitter username (without @). Used when a visitor shares your site on Twitter.
 twitter = "eteppo_"
 
 # Diplay a logo in navigation bar rather than title (optional).
@@ -59,7 +59,7 @@ office_hours = """Monday 10:00 to 13:00<br>
                   Wednesday 09:00 to 10:00"""
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
-appointment_url = "https://calendly.com"
+#appointment_url = "https://calendly.com"
 
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.

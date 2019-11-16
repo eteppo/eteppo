@@ -47,7 +47,7 @@ social:
   link: "mailto:eero.teppo@protonmail.com"
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/eero_teppo
+  link: https://twitter.com/eteppo_
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.fi/citations?user=q5bbjxcAAAAJ
