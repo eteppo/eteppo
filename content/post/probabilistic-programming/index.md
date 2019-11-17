@@ -1,9 +1,9 @@
 +++
-title = "All Models are Special Cases of Probabilistic Programming"
+title = "All Models are Special Cases of Probabilistic Programs"
 date = "2019-11-11"
 +++
 
-If you've had any exposure to data sciences like statistics, machine learning, or some field of informatics, you've probably experienced how overwhelming the amount of algorithms can be. Fortunately, this complexity is just an illusion. In this post I'll try to show you with examples how working on a more general level of basic computational building blocks can make data analysis way simpler and more intuitive, transparent, and effective.
+If you've had any exposure to data sciences like statistics, machine learning, or some field of informatics, you've probably experienced how overwhelming the amount of algorithms can be. Fortunately, this complexity is just an illusion. In this post I'll try to show you with examples how encoding assumptions with basic computational building blocks – instead of picking from thousands of algorithms – can make data analysis way simpler and more intuitive, transparent, and effective.
 
 All of the examples are modified from tutorials or examples of the corresponding software packages.
 
@@ -113,7 +113,9 @@ The real weight is about 9.0 +/- 0.7SD.
 
 ## Factor analysis
 
-Factor analysis is one of the popular methods to represent many variables with a smaller set of variables (dimension reduction). It's also just a simple probabilistic program.
+Let's say you have a theory that the five variables that you have in your dataset could be actually thought to be a manifestation of two latent variables. For example, dozen or so symptoms could be a manifestation of concepts called _depression_ and _anxiety disorder_. We can model this simply with a multivariate distribution over the observed variables and latent variables, weights, and some error in the inputs.
+
+This roughly corresponds to the so-called _factor analysis_ that is one of the popular methods to represent many variables with a smaller set of variables (dimension reduction).
 
 This time we use R and greta but the basic components are pretty much the same.
 
@@ -137,7 +139,9 @@ posteriors <- mcmc(model, sampler = hmc())
 
 ## Clinical trials
 
-How about modelling clinical trials? Again, we could model arbitrarily complex trial designs. In the probabilistic programming world we are not restricted to simple canned statistical tools. Let's use C#, .NET, and Microsoft.ML.Probabilistic for a change.
+How about modelling clinical trials? Again, we could model arbitrarily complex trial designs. In the probabilistic programming world we are not restricted to simple canned statistical tools, like a particular frequentist statistical test. Instead, we can give treatment effectiveness a plausible prior, model the two alternatives where the treatment is effective and ineffective, infer the model given some data, and query what the posterior distributions over some relevant parameters look like. 
+
+Let's use C#, .NET, and Microsoft.ML.Probabilistic for a change.
 
 ```cs
 using Microsoft.ML;
@@ -202,7 +206,9 @@ P(good | control) = Beta(4,8)[mean=0.3333]
 
 ## Hidden Markov Model
 
-In the last example, we'll build a so-called <a href="https://en.wikipedia.org/wiki/Hidden_Markov_model" target="_blank">Hidden Markov Model</a> using JavaScript and WebPPL.
+Let's imagine that we have measured whether children have an allergy five times during their childhood. The measurement is not perfect but has some error. How would you model this? Basically, we have five latent variables with connections to the next latent variable by time and to the five observed variables for the same time point. 
+
+This model corresponds to a so-called <a href="https://en.wikipedia.org/wiki/Hidden_Markov_model" target="_blank">Hidden Markov Model</a>. Let's code something like it – this time using another probabilistic programming language – the WebPPL implemented in JavaScript.
 
 ```javascript
 // data
