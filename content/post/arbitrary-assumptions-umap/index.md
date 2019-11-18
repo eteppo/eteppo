@@ -9,7 +9,7 @@ All models in data sciences are basically lists of assumptions. The more accurat
 
 <a href="https://www.asimovinstitute.org/neural-network-zoo/"><img src="https://www.asimovinstitute.org/wp-content/uploads/2019/04/NeuralNetworkZoo20042019-1400x2380.png"></a>
 
-Now, the problem is that this is not how data science is often done (sometimes called <a href="https://www.mbmlbook.com/">model-based machine learning</a>). Instead, analysts are not sure what assumptions to make and use a canned algorithm that happens to be the standard in your field for the kind of data that you roughly have – or they select the algorithm that has been empirically superior among some benchmarks.
+Now, the problem is that this is not how data science is often done. Instead, analysts are not sure what assumptions to make and use a canned algorithm that happens to be the standard in your field for the kind of data that you roughly have – or they select the algorithm that has been empirically superior among some benchmarks.
 
 I wrote a <a href="https://eteppo.com/post/probabilistic-programming/" target="_blank"> little piece</a> on probabilistic programming as a framework that makes architectures, handling of uncertainty, and other things much less arbitrary but I want to take things further in this post. All algrotihms with cool names – like _ConvNets_ for images – should be developed based on good, non-arbitrary, general mathematical assumptions about the data.
 
