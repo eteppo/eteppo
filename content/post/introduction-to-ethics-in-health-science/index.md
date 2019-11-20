@@ -1,6 +1,5 @@
 +++
-title = "An Introduction to Ethics in Health Science"
-summary = "A 2015 learning diary from a short health science ethics course."
+title = "Introduction to Ethics in Health Science"
 author = "Eero Teppo"
 date = "2015-04-16"
 +++
