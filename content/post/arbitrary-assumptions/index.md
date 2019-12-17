@@ -1,5 +1,5 @@
 +++
-title = "Less Arbitrary Assumptions Make Better Models – and UMAP"
+title = "Less Arbitrary Assumptions Make Better Models"
 date = "2019-11-16"
 +++
 
