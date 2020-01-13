@@ -1,5 +1,11 @@
 {"name":"Knowledge",
 "children":[
+	{"name":"Metascience", "children":[
+		{"name":"placeholder", "size":1},
+		{"name":"placeholder", "size":1},
+		{"name":"placeholder", "size":1},
+		{"name":"placeholder", "size":1}
+	]},
 	{"name":"Astronomy",
 	"children":[
 		{"name":"Big bang", "size":1},
