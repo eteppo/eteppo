@@ -1,11 +1,4 @@
-youtube screen ratio (or detect screen ratio and use that adaptively)
-text wrapping
-description field under name
 refactor code
-hover and click only to next level (without labels no idea what's inside)
-make it so that clicking circle doesn't get you back one level
-OR make a hovering tooltip
-size = number of characters?
-circles to ellipses? (background radiation like map!)
-maybe show labels one level down too (small font), guides clicking
-prevent overlap of labels
+attach wiki-links to leaf node labels
+text wrapping with d3-textwrap + browserify + watchify
+show labels two levels down

@@ -1,11 +1,15 @@
 {"name":"Knowledge",
 "children":[
 	{"name":"Metascience", "children":[
-		{"name":"placeholder", "size":1},
-		{"name":"placeholder", "size":1},
-		{"name":"placeholder", "size":1},
-		{"name":"placeholder", "size":1}
-	]},
+		{"name":"Methods research", "size":1},
+		{"name":"Reporting research", "size":1},
+		{"name":"Reproducibility research", "size":1},
+		{"name":"Evaluation research", "size":1},
+		{"name":"Scientometrics", "size":1},
+		{"name":"Publication science", "size":1},
+		{"name":"Incentive research", "size":1}
+	]
+	},
 	{"name":"Astronomy",
 	"children":[
 		{"name":"Big bang", "size":1},
@@ -134,9 +138,7 @@
 	},
 	{"name":"Biology",
 	"children":[
-		{"name":"Abiogenesis", "size":1},
-		{"name":"Endosymbiosis", "size":1},
-		{"name":"Organisms",
+		{"name":"Taxonomy",
 		"children":[
 			{"name":"Bacteria domain genera", "children":[
 				{"name":"Vibrio", "size":1},
@@ -188,7 +190,8 @@
 				}
 			]
 			},
-			{"name":"Animal kingdom phyla", "children":[
+			{"name":"Animal kingdom phyla", 
+			"children":[
 				{"name":"Porifera", "size":1},
 				{"name":"Cnidaria", "size":1},
 				{"name":"Platyhelminthes", "size":1},
@@ -196,61 +199,68 @@
 				{"name":"Annelida", "size":1},
 				{"name":"Arthropoda", "size":1},
 				{"name":"Mollusca", "size":1},
-				{"name":"Chordata phyla classes", "children":[
-					{"name":"Actinopterygii", "size":1},
-					{"name":"Sarcopterygii", "size":1},
-					{"name":"Amphibian", "size":1},
-					{"name":"Reptile", "size":1},
-					{"name":"Avian", "size":1},
-					{"name":"Mammal class orders", "children":[
-						{"name":"Artiodactyla", "size":1},
-						{"name":"Perissodactyla", "size":1},
-						{"name":"Carnivora", "size":1},
-						{"name":"Rodentia", "size":1},
-						{"name":"Didelphimorphia", "size":1},
-						{"name":"Diprotodontia", "size":1},
-						{"name":"Chiropteria", "size":1},
-						{"name":"Eulipotyphla", "size":1},
-						{"name":"Cingulata", "size":1},
-						{"name":"Pilosa", "size":1},
-						{"name":"Cetacea", "size":1},
-						{"name":"Lagomorpha", "size":1},
-						{"name":"Proboscidea", "size":1},
-						{"name":"Monotremata", "size":1},
-						{"name":"Primates order families", 
-						"children":[
-							{"name":"Tarsiidae", "size":1},
-							{"name":"Lemuridae", "size":1},
-							{"name":"Cercopithecidae", "size":1},
-							{"name":"Hylobatidae", "size":1},
-							{"name":"Hominidae family genera", 
-							"children":[
-								{"name":"Gorilla", "size":1},
-								{"name":"Pongo", "size":1},
-								{"name":"Pan", "size":1},
-								{"name":"Australopithecus", "size":1},
-								{"name":"Paranthropus", "size":1},
-								{"name":"Homo genus species", 
-								"children":[
-									{"name":"Floresiensis", "size":1},
-									{"name":"Habilis", "size":1},
-									{"name":"Ergaster", "size":1},
-									{"name":"Naledi", "size":1},
-									{"name":"Erectus", "size":1},
-									{"name":"Heidelbergensis", "size":1},
-									{"name":"Neanderthalensis", "size":1},
-									{"name":"Denisova", "size":1},
-									{"name":"Sapiens", "size":1}
-								]
-								}
-							]
-							}
-						]
-						}
-					]
-					}
-				]
-				}
+				{"name":"Chordata", "size":1}
+			]
+			},
+			{"name":"Chordata phyla classes", 
+			"children":[
+				{"name":"Actinopterygii", "size":1},
+				{"name":"Sarcopterygii", "size":1},
+				{"name":"Amphibian", "size":1},
+				{"name":"Reptile", "size":1},
+				{"name":"Avian", "size":1},
+				{"name":"Mammal", "size":1}
+			]
+			},
+			{"name":"Mammal class orders", 
+			"children":[
+				{"name":"Artiodactyla", "size":1},
+				{"name":"Perissodactyla", "size":1},
+				{"name":"Carnivora", "size":1},
+				{"name":"Rodentia", "size":1},
+				{"name":"Didelphimorphia", "size":1},
+				{"name":"Diprotodontia", "size":1},
+				{"name":"Chiropteria", "size":1},
+				{"name":"Eulipotyphla", "size":1},
+				{"name":"Cingulata", "size":1},
+				{"name":"Pilosa", "size":1},
+				{"name":"Cetacea", "size":1},
+				{"name":"Lagomorpha", "size":1},
+				{"name":"Proboscidea", "size":1},
+				{"name":"Monotremata", "size":1},
+				{"name":"Primates", "size":1}
+			]
+			},
+			{"name":"Primates order families", 
+			"children":[
+				{"name":"Tarsiidae", "size":1},
+				{"name":"Lemuridae", "size":1},
+				{"name":"Cercopithecidae", "size":1},
+				{"name":"Hylobatidae", "size":1},
+				{"name":"Hominidae", "size":1}
+			]
+			},
+			{"name":"Hominidae family genera", 
+			"children":[
+				{"name":"Gorilla", "size":1},
+				{"name":"Pongo", "size":1},
+				{"name":"Pan", "size":1},
+				{"name":"Australopithecus", "size":1},
+				{"name":"Paranthropus", "size":1},
+				{"name":"Homo", "size":1}
+			]
+			},
+			{"name":"Homo genus species", 
+			"children":[
+				{"name":"Floresiensis", "size":1},
+				{"name":"Habilis", "size":1},
+				{"name":"Ergaster", "size":1},
+				{"name":"Naledi", "size":1},
+				{"name":"Erectus", "size":1},
+				{"name":"Heidelbergensis", "size":1},
+				{"name":"Neanderthalensis", "size":1},
+				{"name":"Denisova", "size":1},
+				{"name":"Sapiens", "size":1}
 			]
 			}
 		]
@@ -259,6 +269,7 @@
 		"children":[
 			{"name":"Evolutionary milestones", "children":[
 				{"name":"Abiogenesis", "size":1},
+				{"name":"Endosymbiosis", "size":1},
 				{"name":"Amnionic sack", "size":1},
 				{"name":"Legs", "size":1},
 				{"name":"Warm blood", "size":1},
@@ -269,12 +280,22 @@
 				{"name":"Even number of toes", "size":1},
 				{"name":"Odd number of toes", "size":1}
 			]
-			},
-			{"name":"placeholder", "size":1}
+			}
 		]
 		},
 		{"name":"Anatomy", "children":[
 			{"name":"Human anatomy", "size":1}	
+		]
+		},
+		{"name":"Microbiology", "children":[
+			{"name":"Virology", "size":1},
+			{"name":"Bacteriology", "size":1},
+			{"name":"Parasitology", "size":1}
+		]
+		},
+		{"name":"Physiscal biology", "children":[
+			{"name":"Quantum biology", "size":1},
+			{"name":"Biophysics", "size":1}
 		]
 		},
 		{"name":"Developmental biology", "size":1},
@@ -289,11 +310,8 @@
 		{"name":"Botany", "size":1},
 		{"name":"Paleontology", "size":1},
 		{"name":"Biochemistry", "size":1},
-		{"name":"Quantum biology", "size":1},
-		{"name":"Biophysics", "size":1},
 		{"name":"Molecular biology", "size":1},
 		{"name":"Structural biology", "size":1},
-		{"name":"Virology", "size":1},
 		{"name":"Cellular biology",
 		"children":[
 			{"name":"Nucleus", "size":1},
@@ -1169,69 +1187,143 @@
 	},
 	{"name":"Earth science",
 	"children":[
+		{"name":"Earth spheres",
+		"children":[
+			{"name":"Atmosphere", "size":1},
+			{"name":"Biosphere", "size":1},
+			{"name":"Hydrosphere", "size":1},
+			{"name":"Pedosphere", "size":1},
+			{"name":"Cryosphere", "size":1},
+			{"name":"Lithosphere", "size":1}
+		]
+		},
 		{"name":"Geology",
 		"children":[
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder",
+			{"name":"Mineralogy", "size":1},
+			{"name":"Petrology", "size":1},
+			{"name":"Geomorphology", "size":1},
+			{"name":"Paleontology", "size":1},
+			{"name":"Stratigraphy", "size":1},
+			{"name":"Structural geology", "size":1},
+			{"name":"Stratigraphy", "size":1},
+			{"name":"Engineering geology", "size":1},
+			{"name":"Sedimentology", "size":1}
+		]
+		},
+		{"name":"Earth system science", "size":1},
+		{"name":"Environmental science", "size":1},
+		{"name":"Geophysics", "size":1},
+		{"name":"Geodesy", "size":1},
+		{"name":"Geochemistry",
+		"children":[
+			{"name":"Aqueous geochemistry", "size":1},
+			{"name":"Cosmochemistry", "size":1},
+			{"name":"Isotope geomchemistry", "size":1},
+			{"name":"Biogeochemistry", "size":1}
+		]
+		},
+		{"name":"Soil science",
+		"children":[
+			{"name":"Edaphology", "size":1},
+			{"name":"Pedology", "size":1}
+		]
+		},
+		{"name":"Ecology",
+		"children":[
+			{"name":"Population ecology", "size":1},
+			{"name":"Community ecology", "size":1},
+			{"name":"Ecosystem ecology", "size":1},
+			{"name":"Behavioural ecology",
 			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1}
+				{"name":"Ethology", "size":1}			
+			]
+			},
+			{"name":"Social ecology", "size":1},
+			{"name":"Biogeoraphy", "size":1},
+			{"name":"Molecular ecology", "size":1},
+			{"name":"Concepts",
+			"children":[
+				{"name":"Coevolution", "size":1},
+				{"name":"Food web", "size":1},
+				{"name":"Niche", "size":1},
+				{"name":"Migration", "size":1},
+				{"name":"Biodiversity", "size":1},
+				{"name":"Habitat", "size":1},
+				{"name":"Biome", "size":1},
+				{"name":"Biosphere", "size":1},
+				{"name":"Trophic level", "size":1}
 			]
 			}
 		]
 		},
+		{"name":"Hydrology", 
+		"children":[
+			{"name":"Hydrometeorology", "size":1},
+			{"name":"Surface water hydrology", "size":1},
+			{"name":"Hydrogeology", "size":1},
+			{"name":"Watershed science", "size":1},
+			{"name":"Forest hydrology", "size":1},
+			{"name":"Water chemistry", "size":1}	
+		]
+		},
+		{"name":"Atmospheric science", 
+		"children":[
+			{"name":"Meteorology", "size":1},
+			{"name":"Climatology", "size":1},
+			{"name":"Atmospheric chemistry", "size":1},
+			{"name":"Atmospheric physics", "size":1}
+		]
+		},
+		{"name":"Oceanography", "size":1},
+		{"name":"Glaciology", "size":1},
+		{"name":"Limnology", "size":1},
 		{"name":"Physical geography",
 		"children":[
 			{"name":"placeholder", "size":1},
 			{"name":"placeholder", "size":1},
 			{"name":"placeholder", "size":1}
 		]
-		},
-		{"name":"Environmental science",
-		"children":[
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder",
-			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1}
-			]
-			}
-		]
 		}
 	]
 	},
 	{"name":"Psychology",
 	"children":[
-		{"name":"placeholder", "size":1},
-		{"name":"placeholder", "size":1},
-		{"name":"Cognitive science",
-			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder",
-				"children":[
-					{"name":"placeholder", "size":1},
-					{"name":"placeholder", "size":1},
-					{"name":"placeholder", "size":1}
-				]
-				}
-		]
-		},
-		{"name":"Behavioural science",
+		{"name":"Behavioral genetics", "size":1},
+		{"name":"Behavioral neuroscience", "size":1},
+		{"name":"Cognitive psychology", "size":1},
+		{"name":"Comparative psychology", "size":1},
+		{"name":"Cultural psychology", "size":1},
+		{"name":"Differential psychology", "size":1},
+		{"name":"Developmental psychology", "size":1},
+		{"name":"Evolutionary psychology", "size":1},
+		{"name":"Neuropsychology", "size":1},
+		{"name":"Personality psychology", "size":1},
+		{"name":"Positive psychology", "size":1},
+		{"name":"Health psychology", "size":1},
+		{"name":"Critical psychology", "size":1},
+		{"name":"Humanistic psychology", "size":1},
+		{"name":"Social psychology", "size":1},
+		{"name":"Applied psychology", 
 		"children":[
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder",
-			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1}
-			]
-			}
+			{"name":"Clinical psychology", "size":1},
+			{"name":"Counseling psychology", "size":1},
+			{"name":"Community psychology", "size":1},
+			{"name":"Consumer psychology", "size":1},
+			{"name":"Educational psychology", "size":1},
+			{"name":"Environmental psychology", "size":1},
+			{"name":"Ergonomic psychology", "size":1},
+			{"name":"Forensic psychology", "size":1},
+			{"name":"Industrial-occupational psychology", "size":1},
+			{"name":"Legal psychology", "size":1},
+			{"name":"Medical psychology", "size":1},
+			{"name":"Military psychology", "size":1},
+			{"name":"Music psychology", "size":1},
+			{"name":"Occupational psychology", "size":1},
+			{"name":"Political psychology", "size":1},
+			{"name":"Religion psychology", "size":1},
+			{"name":"School psychology", "size":1},
+			{"name":"Sports psychology", "size":1},
+			{"name":"Traffic psychology", "size":1}
 		]
 		}
 	]
@@ -1544,15 +1636,23 @@
 		},
 		{"name":"Linguistics",
 		"children":[
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder",
-			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1}
-			]
-			}
+			{"name":"Language acquisition", "size":1},
+			{"name":"Anthropological linguistics", "size":1},
+			{"name":"Computational linguistics", "size":1},
+			{"name":"Sociolinguistics", "size":1},
+			{"name":"Historical linguistics", "size":1},
+			{"name":"Lexicography", "size":1},
+			{"name":"Linguistic morphology", "size":1},
+			{"name":"Morphophonology", "size":1},
+			{"name":"Neurolinguistics", "size":1},
+			{"name":"Phonetics", "size":1},
+			{"name":"Phonology", "size":1},
+			{"name":"Pragmatics", "size":1},
+			{"name":"Psycholinguistics", "size":1},
+			{"name":"Linguistic semantics", "size":1},
+			{"name":"Syntax", "size":1},
+			{"name":"Grammatical theory", "size":1},
+			{"name":"Forensic linguistics", "size":1}
 		]
 		},
 		{"name":"Business administration",
@@ -1569,13 +1669,72 @@
 		},
 		{"name":"Law",
 		"children":[
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder",
-			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1}
+			{"name":"Legal systems", "children":[
+				{"name":"Civil law", "children":[
+					{"name":"Napoleonic law", "size":1},
+					{"name":"Germanic law", "size":1},
+					{"name":"Nordic law", "size":1},
+					{"name":"Indigenous law", "size":1},
+					{"name":"Mixed civil law", "size":1}
+				]
+				},
+				{"name":"Common law", "size":1},
+				{"name":"Customary law", "size":1},
+				{"name":"Muslim law", "size":1},
+				{"name":"Jewish law", "size":1},
+				{"name":"Mixed law", "size":1}
+			]
+			},
+			{"name":"Legal institutions", "children":[
+				{"name":"Judiciary", "size":1},
+				{"name":"Legislature", "size":1},
+				{"name":"Executive", "size":1},
+				{"name":"Military", "size":1},
+				{"name":"Police", "size":1},
+				{"name":"Bureaucracy", "size":1},
+				{"name":"Legal profession", "size":1},
+				{"name":"Civil society", "size":1}
+			]
+			},
+			{"name":"Comparative law", "size":1},
+			{"name":"International law", "size":1},
+			{"name":"Constitutional and administrative law", "size":1},
+			{"name":"Criminal law", "size":1},
+			{"name":"Contract law", "size":1},
+			{"name":"Property law", "size":1},
+			{"name":"Equity", "size":1},
+			{"name":"Trust law", "size":1},
+			{"name":"Social law", "children":[
+				{"name":"Labour law", "size":1},
+				{"name":"Public interest law", "size":1},
+				{"name":"Human rights law", "size":1},
+				{"name":"Civil procedure", "size":1},
+				{"name":"Criminal procedure", "size":1},
+				{"name":"Evidence law", "size":1},
+				{"name":"Immigration law", "size":1},
+				{"name":"Nationality law", "size":1},
+				{"name":"Social security law", "size":1},
+				{"name":"Family law", "size":1},
+				{"name":"Transactional law", "size":1}			
+			]
+			},
+			{"name":"Commerce law", "children":[
+				{"name":"Company law", "size":1},
+				{"name":"Commercial law", "size":1},
+				{"name":"Admiralty law", "size":1},
+				{"name":"Intellectual property law", "size":1},
+				{"name":"Restitution law", "size":1},
+				{"name":"Space law", "size":1}
+			]
+			},
+			{"name":"Regulatory law", "children":[
+				{"name":"Tax law", "size":1},
+				{"name":"Banking law", "size":1},
+				{"name":"Industrial regulatory law", "size":1},
+				{"name":"Competition law", "size":1},
+				{"name":"Consumer law", "size":1},
+				{"name":"Enviromental law", "size":1},
+				{"name":"Air law", "size":1}
 			]
 			}
 		]
@@ -1804,68 +1963,235 @@
 	},
 	{"name":"Health science",
 	"children":[
-		{"name":"Ergonomics", "size":1},
+		{"name":"Speech-language pathology", "size":1},
+		{"name":"Ergonomics", "children":[
+			{"name":"Ergonomic sciences", 
+			"children":[
+				{"name":"Anatomy", "size":1},
+				{"name":"Biomechanics", "size":1},
+				{"name":"Psychology", "size":1},
+				{"name":"Sociology", "size":1},
+				{"name":"Engineering", "size":1},
+				{"name":"Industrial design", "size":1},
+				{"name":"Physiology", "size":1},
+				{"name":"Anthropometry", "size":1},
+				{"name":"Interaction design", "size":1},
+				{"name":"Visual design", "size":1},
+				{"name":"User experience", "size":1},
+				{"name":"User interface design", "size":1}
+			]
+			},			
+			{"name":"Physical ergonomics", "size":1},
+			{"name":"Cognitive ergonomics", 
+			"children":[
+				{"name":"Cognitive task analysis", "size":1},
+				{"name":"Neuroergonomics", "size":1},
+				{"name":"Human-computer interaction", "size":1}
+			]
+			},
+			{"name":"Organizational ergonomics", 
+			"children":[
+				{"name":"Communication ergonomics", "size":1},
+				{"name":"Crew resource management", "size":1},
+				{"name":"Work design", "size":1},
+				{"name":"Work time design", "size":1},
+				{"name":"Participatory design", "size":1},
+				{"name":"Community ergonomics", "size":1},
+				{"name":"Virtual organization ergonomics", "size":1},
+				{"name":"Telework ergonomics", "size":1}
+			]
+			}
+		]
+		},
 		{"name":"Veterinary medicine",
 		"children":[
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder",
+			{"name":"Veterinary surgery", 
 			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1}
+				{"name":"Large animal surgery", "size":1},
+				{"name":"Small animal surgery", "size":1}
+			]
+			},
+			{"name":"Diagnostic veterinary medicine", 
+			"children":[
+				{"name":"Veterinary pathology", "size":1},
+				{"name":"Veterinary radiology", "size":1}
+			]
+			},
+			{"name":"Veterinary anesthesiology", "size":1},
+			{"name":"Veterinary nutrition", "size":1},
+			{"name":"Veterinary dermatology", "size":1},
+			{"name":"Veterinary internal medicine", "size":1},
+			{"name":"Theriogenology", "size":1},
+			{"name":"Animal behaviour medicine", "size":1},
+			{"name":"Animal specialties", 
+			"children":[
+				{"name":"Laboratory animal medicine", "size":1},
+				{"name":"Poultry medicine", "size":1},
+				{"name":"Equine medicine", "size":1},
+				{"name":"Beef cattle medicine", "size":1},
+				{"name":"Canine/feline medicine", "size":1},
+				{"name":"Exotic companion mammal medicine", "size":1},
+				{"name":"Food animal medicine", "size":1},
+				{"name":"Dairy animal medicine", "size":1},
+				{"name":"Reptile and amphibian medicine", "size":1},
+				{"name":"Swine medicine", "size":1},
+				{"name":"Zoological medicine", "size":1},
+				{"name":"Avian medicine", "size":1}
 			]
 			}
 		]
 		},
+		{"name":"Epidemiology", "size":1},
 		{"name":"Medicine",
 		"children":[
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder",
+			{"name":"Medical basic science",
 			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1}
+				{"name":"Anatomy", "size":1},
+				{"name":"Histology", "size":1},
+				{"name":"Cell biology", "size":1},
+				{"name":"Molecular biology", "size":1},
+				{"name":"Biohemistry", "size":1},
+				{"name":"Embryology", "size":1},
+				{"name":"Biogerontology", "size":1},
+				{"name":"Epidemiology", "size":1},
+				{"name":"Physiology", "size":1},
+				{"name":"Immunology", "size":1},
+				{"name":"Genetics", "size":1},
+				{"name":"Microbiology", "size":1},
+				{"name":"Nutrition science", "size":1},
+				{"name":"Toxicology", "size":1},
+				{"name":"Bioethics", "size":1},
+				{"name":"Medical ethics", "size":1},
+				{"name":"Medical social science", "size":1},
+				{"name":"Pharmacology", "size":1}
 			]
-			}
+			},
+			{"name":"Operative medicine",
+			"children":[
+				{"name":"General surgery", "size":1},
+				{"name":"Opthalmology", "size":1},
+				{"name":"Vascular surgery", "size":1},
+				{"name":"Gastroenterologic surgery", "size":1},
+				{"name":"Oral and maxillofacial surgery", "size":1},
+				{"name":"Neurosurgery", "size":1},
+				{"name":"Orthopedic surgery", "size":1},
+				{"name":"Trauma surgery", "size":1},
+				{"name":"Otolaryngology", "size":1},
+				{"name":"Plastic surgery", "size":1},
+				{"name":"Urology", "size":1},
+				{"name":"Cardiothoracic surgery", "size":1},
+				{"name":"Pediatric surgery", "size":1},
+				{"name":"Anesthesiology", "size":1},
+				{"name":"Obstetrics and gynecology", "size":1}
+			]
+			},
+			{"name":"Conservative medicine", 
+			"children":[
+				{"name":"Internal medicine", "children":[
+					{"name":"Gastroenterology", "size":1},
+					{"name":"Hepatology", "size":1},
+					{"name":"Rheumatology", "size":1},
+					{"name":"Cardiology", "size":1},
+					{"name":"Endocrinology", "size":1},
+					{"name":"Hematology", "size":1},
+					{"name":"Infectious disease medicine", "size":1},
+					{"name":"Nephrology", "size":1}					
+				]
+				},
+				{"name":"Pulmonology", "size":1},
+				{"name":"Neurology", "size":1},
+				{"name":"Oncology", "size":1},
+				{"name":"Critical care medicine", "size":1},
+				{"name":"Emergency medicine", "size":1},
+				{"name":"Pediatrics", "size":1},
+				{"name":"Geriatrics", "size":1},
+				{"name":"Family medicine", "size":1},
+				{"name":"Dermatology", "size":1},
+				{"name":"Occupational medicine", "size":1},
+				{"name":"Sexual medicine", "size":1},
+				{"name":"General medicine", "size":1},
+				{"name":"Hospice medicine", "size":1},
+				{"name":"Pain medicine", "size":1},
+				{"name":"Palliative medicine", "size":1}		
+			]
+			},
+			{"name":"Diagnostic medicine", 
+			"children":[
+				{"name":"Clinical chemistry", "size":1},
+				{"name":"Laboratory hematology", "size":1},
+				{"name":"Pathology", "size":1},
+				{"name":"Forensic medicine", "size":1},
+				{"name":"Radiology", "size":1},
+				{"name":"Clinical physiology", "size":1},
+				{"name":"Nuclear medicine", "size":1},
+				{"name":"Hereditary medicine", "size":1},
+				{"name":"Pharmaceutical medicine", "size":1},
+				{"name":"Clinical neurophysiology", "size":1}
+			]
+			},
+			{"name":"Phychiatric medicine",
+			"children":[
+				{"name":"Psychiatry", "size":1},
+				{"name":"Pediatric psychiatry", "size":1},
+				{"name":"Adolescent psychiatry", "size":1},
+				{"name":"Forensic psychiatry", "size":1}
+			]
+			},
+			{"name":"Sports medicine", "size":1},
+			{"name":"Diving medicine", "size":1},
+			{"name":"Aerospace medicine", "size":1},
+			{"name":"Travel medicine", "size":1},
+			{"name":"Tropical medicine", "size":1},
+			{"name":"Global medicine", "size":1}
 		]
 		},
-		{"name":"Public health science",
+		{"name":"Public health",
 		"children":[
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder",
-			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1}
-			]
-			}
+			{"name":"Environmental health", "size":1},
+			{"name":"Community health", "size":1},
+			{"name":"Behavioral health", "size":1},
+			{"name":"Health economics", "size":1},
+			{"name":"Public health policy", "size":1},
+			{"name":"Health education", "size":1},
+			{"name":"Health promotion", "size":1},
+			{"name":"Public health surveillance", "size":1},
+			{"name":"Occupational safety", "size":1}
 		]
 		},
 		{"name":"Dietetics",
 		"children":[
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder",
-			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1}
-			]
-			}
+			{"name":"Clinical dietetics", "size":1},
+			{"name":"Community dietetics", "size":1},
+			{"name":"Food service dietetics", "size":1},
+			{"name":"Gerontological dietetics", "size":1},
+			{"name":"Pediatric dietetics", "size":1}
 		]
 		},
 		{"name":"Clinical psychology",
 		"children":[
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder", "size":1},
-			{"name":"placeholder",
+			{"name":"Clinical neuropsychology", "size":1},
+			{"name":"Couple and family psychology", "size":1},
+			{"name":"Clinical health psychology", "size":1},
+			{"name":"School psychology", "size":1},
+			{"name":"Clinical child psychology", "size":1},
+			{"name":"Counseling psychology", "size":1},
+			{"name":"Clinical forensic psychology", "size":1},
+			{"name":"Sleep psychology", "size":1},
+			{"name":"Industrial-occupational psychology", "size":1},
+			{"name":"Police and public safety psychology", "size":1},
+			{"name":"Geropsychology", "size":1},
+			{"name":"Rehabilitation psychology", "size":1},
+			{"name":"Behavioral and cognitive psychology", "size":1},
+			{"name":"Group psychology", "size":1},
+			{"name":"Psychoanalytic psychology", 
 			"children":[
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1},
-				{"name":"placeholder", "size":1}
+				{"name":"Classical Freudian analysis", "size":1},
+				{"name":"Ego psychology", "size":1},
+				{"name":"Self psychology", "size":1},
+				{"name":"Relational analysis", "size":1},
+				{"name":"Lacanian psychoanalysis", "size":1},
+				{"name":"Jungian psychoanalysis", "size":1},
+				{"name":"Neuropsychoanalysis", "size":1}
 			]
 			}
 		]
