@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: eteppo.com
+Token: f436225e42b876e6033779fa0c00a4a0ceab3892d610232b3c04b446a916dba8
