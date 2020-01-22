@@ -389,7 +389,7 @@
 			{"name":"Proteins", "size":1},
 			{"name":"Nucleic acids", "size":1},
 			{"name":"Lipids", "size":1},
-			{"name":"Agricutural biochemistry", "size":1},
+			{"name":"Agricultural biochemistry", "size":1},
 			{"name":"Nutritional biochemistry", "size":1},
 			{"name":"Medical biochemistry", "size":1}
 		]
@@ -1351,6 +1351,12 @@
 		},
 		{"name":"Economics",
 		"children":[
+			{"name":"Microeconomics", "size":1},
+			{"name":"Macroeconomics", "size":1},
+			{"name":"International economics", "size":1},
+			{"name":"Development economics", "size":1},
+			{"name":"Labor economics", "size":1},
+			{"name":"Welfare economics", "size":1},
 			{"name":"Entities", 
 			"children":[
 				{"name":"Individuals", "size":1},
@@ -1420,39 +1426,49 @@
 					{"name":"Recency bias", "size":1}
 				]
 				},
-				{"name":"Labour", "size":1},
-				{"name":"Lending", "size":1},
-				{"name":"Borrowing", "size":1},
-				{"name":"Saving", "size":1},
-				{"name":"Buying", "size":1},
-				{"name":"Pricing", "size":1},
-				{"name":"Selling", "size":1},
-				{"name":"Investing", "size":1},
-				{"name":"Demand", "size":1},
-				{"name":"Supply", "size":1},
 				{"name":"Production", "size":1},
+					{"name":"Labour", "size":1},
+					{"name":"Competition", "size":1},
+					{"name":"Pricing", "size":1},
+					{"name":"Management", "size":1},
+					{"name":"Leadership", "size":1},
+					{"name":"Allocation", "size":1},
+					{"name":"Development", "size":1},
+					{"name":"Innovation", "size":1},
+					{"name":"Research", "size":1},
+					{"name":"Education", "size":1},
+					{"name":"Training", "size":1},
+					{"name":"Entrepreneurship", "size":1},
+				{"name":"Input", "size":1},
+					{"name":"Supply", "size":1},
+					{"name":"Borrowing", "size":1},
+					{"name":"Export", "size":1},
+					{"name":"Lending", "size":1},
+					{"name":"Saving", "size":1},
+					{"name":"Selling", "size":1},
+				{"name":"Output", "children"},
+					{"name":"Demand", "size":1},
+					{"name":"Investing", "size":1},
+					{"name":"Import", "size":1},
+					{"name":"Buying", "size":1},
 				{"name":"Consumption", "size":1},
-				{"name":"Trading", "size":1},
-				{"name":"Exchange", "size":1},
-				{"name":"Competition", "size":1},
-				{"name":"Management", "size":1},
-				{"name":"Leadership", "size":1},
-				{"name":"Allocation", "size":1},
-				{"name":"Import", "size":1},
-				{"name":"Export", "size":1},
-				{"name":"Development", "size":1},
-				{"name":"Innovation", "size":1},
-				{"name":"Research", "size":1},
+				{"name":"Transacting", "children":[
+					{"name":"Trading", "size":1},
+					{"name":"Exchange", "size":1},				
+				]
+				},
 				{"name":"Speculation", "size":1},
-				{"name":"Education", "size":1},
-				{"name":"Training", "size":1},
-				{"name":"Entrepreneurship", "size":1},
-				{"name":"Signalling", "size":1},
-				{"name":"Growth", "size":1}
+				{"name":"Growth", "size":1},
+				{"name":"Signalling", "size":1}
 			]
 			},
 			{"name":"Markets",
 			"children":[
+				{"name":"Accessibility", "size":1},
+				{"name":"Temporary monopoly", "size":1},
+				{"name":"Monopoly", "size":1},
+				{"name":"Oligopoly", "size":1},
+				{"name":"Cartels", "size":1},
 				{"name":"Financial markets", "children":[
 					{"name":"Stock market", "size":1},
 					{"name":"Bond market", "size":1},
@@ -1495,7 +1511,8 @@
 			},
 			{"name":"Dynamics", 
 			"children":[
-				{"name":"Boom and bust cycle", "size":1}
+				{"name":"Boom and bust cycle", "size":1},
+				{"name":"Business cycle", "size":1}
 			]
 			},
 			{"name":"Measures", 
@@ -1524,9 +1541,6 @@
 			},
 			{"name":"Market failures", 
 			"children":[
-				{"name":"Monopoly", "size":1},
-				{"name":"Oligopoly", "size":1},
-				{"name":"Cartels", "size":1},
 				{"name":"Public goods", "size":1},
 				{"name":"Political vote-seeking", "size":1},
 				{"name":"Self-seeking bureaucracy", "size":1},
@@ -1549,63 +1563,69 @@
 				}
 			]
 			},
-			{"name":"Immigration", "children":[
-				{"name":"placeholder", "size":1}
-			]
-			},
+			{"name":"Migration", "size":1},
 			{"name":"Price", "children":[
 				{"name":"Efficient market hypothesis", "size":1}
+				{"name":"Elasticity", "size":1},
+				{"name":"Inflation", "size":1},
+				{"name":"Deflation", "size":1}
 			]
 			},
-			{"name":"Employment", "size":1},
-			{"name":"Income", "size":1},
-			{"name":"Foreign direct investment", "size":1},
-			{"name":"Foreign portfolio investment", "size":1},
-			{"name":"Income", "size":1},
 			{"name":"Goals", "size":1},
-			{"name":"Household work", "size":1},
-			{"name":"Welfare", "size":1},
-			{"name":"Stakeholders", "size":1},
-			{"name":"Temporary monopoly", "size":1},
 			{"name":"Productivity", "size":1},
-			{"name":"Accessibility", "size":1},
 			{"name":"Incentives", "size":1},
-			{"name":"Subsidies", "size":1},
-			{"name":"Cost", "size":1},
-			{"name":"Economies of scale", "size":1},
-			{"name":"Specialization", "size":1},
-			{"name":"Modern free trade argument", "size":1},
-			{"name":"Trade protection", "size":1},
+			{"name":"Contract theory", "size":1},	
+			{"name":"Transactions", "children":[
+				{"name":"Income", "size":1},
+				{"name":"Wage", "size":1},
+				{"name":"Remittances", "size":1},
+				{"name":"Skills", "size":1}
+			]
+			},
+			{"name":"Production", "children":[
+				{"name":"Household work", "size":1},
+				{"name":"Economies of scale", "size":1},
+				{"name":"Specialization", "size":1}		
+			]
+			},
 			{"name":"Compensation principle", "size":1},
-			{"name":"Perfect factor mobility assumption", "size":1},
-			{"name":"Infant industry protection", "size":1},
-			{"name":"Labour remodelling cost", "size":1},
-			{"name":"Capital remodelling cost", "size":1},
-			{"name":"Co-operative ownership", "size":1},
-			{"name":"Majority foreign ownership", "size":1},
 			{"name":"Local content requirement", "size":1},
 			{"name":"Opportunity cost", "size":1},
-			{"name":"Ownership", "size":1},
-			{"name":"Wage", "size":1},
-			{"name":"Remittances", "size":1},
-			{"name":"Foreign aid", "size":1},
-			{"name":"Skills", "size":1},
-			{"name":"Labour law", "size":1},
-			{"name":"Wage rules", "size":1},
 			{"name":"Trade deficit", "size":1},
-			{"name":"Minimum wage", "size":1},
-			{"name":"Monetary policy", "size":1},
-			{"name":"Unemployment benefits", "size":1},
-			{"name":"Cyclical unemployment", "size":1},
-			{"name":"Systemic unemployment", "size":1},
-			{"name":"Interest", "size":1},
-			{"name":"Transactions", "size":1},
-			{"name":"Tariffs", "size":1},
-			{"name":"Contracts", "size":1},
-			{"name":"Inflation", "size":1},
-			{"name":"Government expenditure", "size":1},
-			{"name":"Deflation", "size":1},
+			{"name":"Employment", "children":[
+				{"name":"Unemployment benefits", "size":1},
+				{"name":"Cyclical unemployment", "size":1},
+				{"name":"Systemic unemployment", "size":1}
+			]
+			},
+			{"name":"Business", "children":[
+				{"name":"Ownership", "size":1},
+				{"name":"Stakeholders", "size":1},
+				{"name":"Perfect factor mobility assumption", "size":1},
+				{"name":"Labour remodelling cost", "size":1},
+				{"name":"Capital remodelling cost", "size":1},
+				{"name":"Co-operative ownership", "size":1},
+				{"name":"Majority foreign ownership", "size":1}
+			
+			]
+			},
 			{"name":"Finance", "size":1}
+			{"name":"Policy", "children":[
+				{"name":"Welfare", "size":1},
+				{"name":"Subsidies", "size":1},
+				{"name":"Modern free trade argument", "size":1},
+				{"name":"Trade protection", "size":1},
+				{"name":"Foreign aid", "size":1},
+				{"name":"Monetary policy", "size":1},
+				{"name":"Government expenditure", "size":1},
+				{"name":"Interest rate", "size":1},
+				{"name":"Tariffs", "size":1},
+				{"name":"Labour law", "size":1},
+				{"name":"Minimum wage", "size":1},
+				{"name":"Wage rules", "size":1},
+				{"name":"Infant industry protection", "size":1}
+			]
+			}
 		]
 		},
 		{"name":"Education science",
