@@ -1426,7 +1426,7 @@
 					{"name":"Recency bias", "size":1}
 				]
 				},
-				{"name":"Production", "size":1},
+				{"name":"Production", "children":[
 					{"name":"Labour", "size":1},
 					{"name":"Competition", "size":1},
 					{"name":"Pricing", "size":1},
@@ -1438,23 +1438,29 @@
 					{"name":"Research", "size":1},
 					{"name":"Education", "size":1},
 					{"name":"Training", "size":1},
-					{"name":"Entrepreneurship", "size":1},
-				{"name":"Input", "size":1},
+					{"name":"Entrepreneurship", "size":1}				
+				]
+				},
+				{"name":"Input", "children":[
 					{"name":"Supply", "size":1},
 					{"name":"Borrowing", "size":1},
 					{"name":"Export", "size":1},
 					{"name":"Lending", "size":1},
 					{"name":"Saving", "size":1},
-					{"name":"Selling", "size":1},
-				{"name":"Output", "children"},
+					{"name":"Selling", "size":1}				
+				]
+				},
+				{"name":"Output", "children":[
 					{"name":"Demand", "size":1},
 					{"name":"Investing", "size":1},
 					{"name":"Import", "size":1},
-					{"name":"Buying", "size":1},
+					{"name":"Buying", "size":1}
+				]
+				},
 				{"name":"Consumption", "size":1},
 				{"name":"Transacting", "children":[
 					{"name":"Trading", "size":1},
-					{"name":"Exchange", "size":1},				
+					{"name":"Exchange", "size":1}			
 				]
 				},
 				{"name":"Speculation", "size":1},
@@ -1565,7 +1571,7 @@
 			},
 			{"name":"Migration", "size":1},
 			{"name":"Price", "children":[
-				{"name":"Efficient market hypothesis", "size":1}
+				{"name":"Efficient market hypothesis", "size":1},
 				{"name":"Elasticity", "size":1},
 				{"name":"Inflation", "size":1},
 				{"name":"Deflation", "size":1}
@@ -1609,7 +1615,7 @@
 			
 			]
 			},
-			{"name":"Finance", "size":1}
+			{"name":"Finance", "size":1},
 			{"name":"Policy", "children":[
 				{"name":"Welfare", "size":1},
 				{"name":"Subsidies", "size":1},
