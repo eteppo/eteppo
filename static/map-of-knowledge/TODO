@@ -1,4 +1,0 @@
-refactor code
-attach wiki-links to leaf node labels
-text wrapping with d3-textwrap + browserify + watchify
-show labels two levels down
