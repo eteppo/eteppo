@@ -1,0 +1,43 @@
+title = "eteppo"
+baseurl = "https://eteppo.com/"
+copyright = "&copy; {year} Eero Teppo"
+theme = "hugo-academic"
+enableGitInfo = false
+defaultContentLanguage = "en"
+hasCJKLanguage = false
+defaultContentLanguageInSubdir = false
+removePathAccents = true
+paginate = 10
+enableEmoji = false
+footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON" ]
+  section = [ "HTML", "RSS" ]
+
+[blackfriday]
+  hrefTargetBlank = true
+	angledQuotes = false
+	latexDashes = true
+  extensions = ["backslashLineBreak"]
+
+[imaging]
+  resampleFilter = "lanczos"
+  quality = 90
+  anchor = "smart"
+
+[params]
+  color_theme = "default"
+  day_night = false
+  font = "default"
+  description = ""
+  twitter = "eteppo_"
+  # logo = "icon-192.png"
+  highlight = true
+  highlight_languages = ["r", "cpp", "c", "cs", "typescript", "java", "javascript", "ruby", "python", "php", "shell"]
+  highlight_style = "github"
+  math = true
+  privacy_pack = false
+  date_format = "Jan 2, 2006"
+  time_format = "15:04"

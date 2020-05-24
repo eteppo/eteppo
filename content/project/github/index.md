@@ -1,5 +1,4 @@
 +++
-title = "GitHub repositories"
-summary = "All of my software from tiny unfinished demos to functional packages."
+title = "GitHub"
 external_link = "https://github.com/eteppo/"
 +++

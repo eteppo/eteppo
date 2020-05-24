@@ -1,5 +1,4 @@
 +++
-title = "YouTube channel"
-summary = "All of my educational videos on medicine, data sciences, and related topics."
+title = "YouTube"
 external_link = "https://www.youtube.com/user/EeroT"
 +++
