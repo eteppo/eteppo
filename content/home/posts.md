@@ -7,7 +7,7 @@ title = "Blog"
 
 [content]
   page_type = "post"
-  count = 5
+  count = 20
   offset = 0
   order = "desc"
  

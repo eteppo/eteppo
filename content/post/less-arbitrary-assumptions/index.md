@@ -11,7 +11,7 @@ All models in data sciences are basically lists of assumptions. The more accurat
 
 Now, the problem is that this is not how data science is often done. Instead, analysts are not sure what assumptions to make and use a canned algorithm that happens to be the standard in your field for the kind of data that you roughly have – or they select the algorithm that has been empirically superior among some benchmarks.
 
-I wrote a <a href="https://eteppo.com/post/probabilistic-programming/" target="_blank"> little piece</a> on probabilistic programming as a framework that makes architectures, handling of uncertainty, and other things much less arbitrary but I want to take things further in this post. All algrotihms with cool names – like _ConvNets_ for images – should be developed based on good, non-arbitrary, general mathematical assumptions about the data.
+I wrote a <a href="https://eteppo.com/post/probabilistic-programming/" target="_blank"> little piece</a> on probabilistic programming as a framework that makes architectures, handling of uncertainty, and other things much less arbitrary but I want to take things further in this post. All algorithms with cool names – like _ConvNets_ for images – should be developed based on good, non-arbitrary, general mathematical assumptions about the data.
 
 ## What is the structure of datasets like?
 
@@ -53,6 +53,6 @@ As a rule of thumb, when you start hacking arbitrary summary functions and thres
 
 A close analogy in physics is worth a mention here.
 
-Something similar to this happens in physics. The Einstein's theory of gravity, general relativity, uses a similar pseudo-Riemannian geometry that UMAP is based on. It describes how our physical space-time is curved due to mass and energy insanely accurately. Einstein took relatively simple assumptions about the universe – like that all observers measure the speed of light to be the same – and everything else fell into place after that. When you move at slow speeds, general relativity pops out the Newtonian theory of gravity as a special case. 
+The Einstein's theory of gravity, general relativity, uses a similar pseudo-Riemannian geometry that UMAP is based on. It describes how our physical space-time is curved due to mass and energy insanely accurately. Einstein took relatively simple assumptions about the universe – like that all observers measure the speed of light to be the same – and everything else fell into place after that. When you move at slow speeds, general relativity pops out the Newtonian theory of gravity as a special case. 
 
 Now physicists are working on even more general theories of everything and it is a very good sign that something like general relativity and quantum mechanics pop out from the more general theory. It's also a really good sign that the theory is not based on arbitrary assumptions but rather almost seems to write itself. Many physicists seem to think string theory is a strong contender precisely because it has been developed like that. On the other hand, string theorists had to assume a large number of spatial dimensions because the theory doesn't work without them which seems to decrease its ultimate plausibility.

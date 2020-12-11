@@ -1,3 +1,3 @@
 # local builds
 public/
-# locally built resources/ is included as a Netlify workaround.
+# Note: the locally built resources/ is included as a Netlify workaround.

@@ -7,41 +7,41 @@ If you're not convinced why you should help build Wikipedia, give a chance to th
 
 ## Everything you need to know about editing Wikipedia
 
-### 1. Wikimedia projects
+### 1. Check out Wikimedia projects
 
 The movement behind Wikipedia is called the <a href="https://www.wikimedia.org/" target="_blank">Wikimedia</a>. Other Wikimedia's projects that you should consider checking out and contributing to include the <a href="https://www.wikibooks.org/" target="_blank">Wikibooks</a> project.
 
-### 2. Understanding the article URLs
+### 2. Understand the URLs
 
-All languages have their own main sites, e.g., the English Wikipedia is at _<a href="https://en.wikipedia.org/" target="_blank">en.wikipedia.org</a>_ and the Finnish at _fi.wikipedia.org_. The articles are defined in the URL by title, like _<a href="https://en.wikipedia.org/wiki/Ageing/" target="_blank">en.wikipedia.org/wiki/Ageing</a>_. Since ageing is an ambiguous term, people have made a _disambiguation_ article to _.../wiki/Ageing\_(disambiguation)_. Infact, the _Ageing_ article should be _Ageing\_(biology)_ or perhaps _Ageing\_(medicine)_.
+All languages have their own main sites, e.g., the English Wikipedia is at <a href="https://en.wikipedia.org/" target="_blank">en.wikipedia.org</a> and the Finnish at <a href="https://fi.wikipedia.org/" target="_blank">fi.wikipedia.org</a>. The articles are defined in the URL by title, like <a href="https://en.wikipedia.org/wiki/Ageing/" target="_blank">en.wikipedia.org/wiki/Ageing</a>. Since ageing is an ambiguous term, people have made a _disambiguation_ article to <a href="https://en.wikipedia.org/wiki/Ageing_(disambiguation)" target="_blank">. Infact, the _Ageing_ article could be renamed to _Ageing_(biology).
 
-### 3. Namespaces and metapages
+### 3. Understand Namespaces and Read Metapages
 
-Pages like _en.wikipedia.org/wiki/Wikipedia:Contributing_to_Wikipedia_ and _en.wikipedia.org/wiki/Help:Directory_ from the _Wikipedia_ and _Help_ namespaces include metainformation. At this point you should glance over those resources to see what other wikipedians expect from you (not a lot, they just want you to edit).
+Pages like <a href="https://en.wikipedia.org/wiki/Wikipedia:Contributing_to_Wikipedia" target="_blank">en.wikipedia.org/wiki/Wikipedia:Contributing_to_Wikipedia</a> and <a href="https://en.wikipedia.org/wiki/Help:Directory" target="_blank">en.wikipedia.org/wiki/Help:Directory</a> from the _Wikipedia_ and _Help_ namespaces include metainformation. At this point you should glance over those resources to see what other wikipedians expect from you (not a lot, they just want you to edit).
 
-Category pages, like _en.wikipedia.org/wiki/Category:Clinical\_Medicine_ from the _Category_ namespace, include a tree of categories where people can find all articles related to a particular high-level topic. Improving the categorizations is valueable work since people use them as curricula to study particular fields of knowledge.
+Similarky, Category pages, like <a href="https://en.wikipedia.org/wiki/Category:Clinical_Medicine" target="_blank">en.wikipedia.org/wiki/Category:Clinical\_Medicine</a> from the _Category_ namespace, include a tree of categories where people can find all articles related to a particular high-level topic. Improving the categorizations is valueable work since people use them as curricula to study particular fields of knowledge.
 
-Talk pages, like _en.wikipedia.org/wiki/Talk:Ageing_, link to the discussion page of the article. It's a good place to leave feedback and resolve editing conflicts.
+User pages such as <a href="https://en.wikipedia.org/wiki/User:User" target="_blank">en.wikipedia.org/wiki/User:User</a> refer to pages describing user accounts. It's a good place to leave some information about your area of expertise. 
 
-User pages such as _en.wikipedia.org/wiki/User:User_ refer to pages describing user accounts. It's a good place to leave some information about your area of expertise. 
+Talk pages, like <a href="https://en.wikipedia.org/wiki/Talk:Ageing" target="_blank">en.wikipedia.org/wiki/Talk:Ageing</a>, link to the discussion page of the article. It's a good place to leave feedback and resolve editing conflicts. The user account's Talk page is a good place to leave feedback for a user.
 
-Template pages, like _.../wiki/Template:Reflist_ contain templates that help organize and inject structured information like references and infoboxes to the articles. You can see message templates at _<a href="https://en.wikipedia.org/wiki/Wikipedia:Template_messages">Wikipedia:Template\_messages</a>_ and citation templates at _<a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_templates">Wikipedia:Citation\_templates</a>_.
+Template pages, like <a href="https://en.wikipedia.org/wiki/Template:Reflist" target="_blank">en.wikipedia.org/wiki/Template:Reflist</a> contain templates that help organize and inject structured information like references and infoboxes to the articles. You'll learn the most important ones by reading any good articles' Wikitext source. You can see message templates at <a href="https://en.wikipedia.org/wiki/Wikipedia:Template_messages">Wikipedia:Template\_messages</a> and citation templates at <a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_templates">Wikipedia:Citation\_templates</a>.
 
 ### 4. Wikitext
 
-You can edit articles by using the visual interface but I highly recommend taking some time to learn the _Wikitext_ or <a href="https://en.wikipedia.org/wiki/Help:Cheatsheet" target="_blank">Wiki markup language</a>. This lets you write, copy, save, and paste text easily because its the raw text that the MediaWiki software renders to be the final visually pleasing article. Also, it helps you understand how links, citations, images, and so on work under the hood in Wikipedia.
+You can edit articles by using the visual interface but I recommend taking time to learn the _Wikitext_ or <a href="https://en.wikipedia.org/wiki/Help:Cheatsheet" target="_blank">Wiki markup language</a>. It lets you write, copy, save, and paste text easily since it's just raw text that the MediaWiki software renders to be the final visually pleasing article. Also, using Wikitext directly helps you understand how links, citations, images, and so on work under the hood in Wikipedia.
 
-I recommend to edit articles with a raw text editor, like Sublime and Notepad. If needed, copy and paste the raw Wikitext to the text field in the _Edit source_ page and preview to see what it looks like.
+I recommend to edit articles with a raw text editor, like <a href="https://www.sublimetext.com/"> Sublime</a>. Copy and paste the raw _Wikitext_ to the text field in the _Edit source_ tab and preview to see how the raw text looks like rendered.
 
-Here's everything you need to know about _Wikitext_ to get started:
+Here's almost everything you need to know about _Wikitext_ to get started:
 
 * Emphasis: `''italics''` and `'''bold'''`.
-* Titles: `==Subsection==` ẃith two equal signs is a level two subtitle that is actually the highest level title in the article.
-* `*` and `#` make bulleted and numbered lists.
-* Citations: 
-	* `<ref name="google">[https://google.com Google]</ref>`: this adds a reference to external URL. You can cite the same URL with `<ref name="google />` after the first explicit reference.
-	* `<ref name="google">Someone et al. Title. Journal 12;345-5445.</ref>` adds a reference to a journal article.
-	* `{{reflist}}`: this tells the MediaWiki software to place the list of reference (as marked up with the `<ref>`-tags) there.
+* Titles: `==Title==` the highest level title in the article and `===Subtitle===` is one level lower, and so on.
+* `*` and `#` make bulleted and numbered lists. Use them with care.
+* Citations:
+	* It's best to use the Wikipedia's reference templates so that the reference list becomes more structured.
+	* `<ref name="hello123">Someone et al. Title. Journal 12;345-5445.</ref>` adds a reference to the given journal article. The name attribute lets you reference the same citation with just `<ref name="hello123"/>`
+	* `{{reflist}}` at the standard spot at the bottomm of the article tells the MediaWiki software to place the list of reference (as marked up with the `<ref>`-tags) there.
 * Links:
 	* `[[Title]]`: clicking _Title_ links to article _Title_.
 	* `[[Title|pages]]`: clicking _pages_ links to article _Title_.
@@ -49,9 +49,9 @@ Here's everything you need to know about _Wikitext_ to get started:
 * Images: `[[File:filename.png|thumb|Caption]]` adds the file that has been previously uploaded to Wikipedia. Search for _Wikipedia extended image syntax_ when you need more settings.
 * Categorization: `[[Category:Name]]` adds the page to _Category:Name_. It is usually placed at the bottom of the article's Wikitext.
 * Messages: `{{cn}}` is the famous _[citation needed]_ tag that you can add after a claim that lacks a reference. See _Wikipedia:Template\_messages_ for all message templates.
-* Redirection: `#REDIRECT [[Target page]]` redirects automatically to the article _Target page_. It might be easier to use the Wikipedia's graphical interface to change titles of pages.
+* Redirection: `#REDIRECT [[Target page]]` redirects automatically to the article _Target page_. Use the visual interface for transfering pages; it handles the links correctly.
 
-Search for the help pages if you want to make fancier things like tables and quotes. A lot of HTML can be used within Wikitext too.
+Search for the help pages if you want to make fancier things like tables and quotes.
 
 ### 5. Sandboxing
 

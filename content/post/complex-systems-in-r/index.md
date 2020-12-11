@@ -30,13 +30,13 @@ variable called *x*, a parameter called *a*, and the time *t*. This
 system follows a simple rule that can be described in the language of
 mathematics like this.
 
-<img src="system-1-math.png" width="444" />
+<img src="system-1-math.png" width="300" />
 
 In English, the value of *x* at any time point *t* is always it’s value
 at the previous time point multiplied by some number *a*.
 
 Finally, we can represent this as a program and visualize how the system
-behaves with some values for *a* and *x* at time *t* = 0. Notice the
+behaves with some values for *a* and *x* at time *t = 0*. Notice the
 three key functions for initializing the system, measuring the state of
 the system, and updating the state of the system.
 
@@ -71,6 +71,10 @@ exponential systems blow up (like a 50 year investment with a steady
 return).
 
 ![](system-1.gif)
+
+If you think equations like this can't have complex behaviours, I recommend to watch the Veritasium video below on the so-called logistic map. It is truly fascinating.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ovJcsL7vyrk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Cyclical behaviour
 ------------------
@@ -187,14 +191,14 @@ Bifurcations
 Let’s keep adding complexity slowly. This time we take two variables,
 *x* and *y*, and play with the following continuous-time differential
 equation that demonstrates us a complex behaviour called a
-*bifurcation*.
+*bifurcation*, which is a sudden change in a system caused by a small smooth change is a parameter value.
 
 <img src="system-4-math.png" width="287" />
 
 Once again, we represent the same system as a program and simulate it
 with some initial values. This time we also check multiple values of
 parameters to understand how they affect the system. First, let try
-*r* =  − 1.
+*r = − 1*.
 
 ``` r
 initialize_system <- function() {
@@ -234,17 +238,16 @@ for (time_steps in 1:1000) {
 
 ![](system-4.gif)
 
-That’s interesting. How about *r* = 0?
+That’s interesting. How about *r = 0*?
 
 ![](system-4-2.gif)
 
-So that’s much more stable! Can you guess what happens with *r* = 1?
+So that’s much more stable! Can you guess what happens with *r = 1*?
 
 ![](system-4-3.gif)
 
 Just by comparing those animations you get a pretty good intuition of
-what bifurcations are. The systems are totally different when the
-parameter *r* goes from zero to either -1 or +1.
+what bifurcations are. *r* is a bifurcation parameters.
 
 Chaos
 -----
@@ -317,7 +320,7 @@ more data wrangling.
 ![](system-5-2.gif)
 
 The system described by the Lorenz equations clearly has two *attractor
-states* –– or phase space areas that the state is attracted to and
+states* – or phase space areas that the state is attracted to and
 circulates in this case.
 
 But the state of this Lorenz system is still described by only three
@@ -329,10 +332,9 @@ Random walkers
 --------------
 
 Let’s start by adding units first. This time we skip the mathematical
-description and start with English. We model a system that consists of a
-thousand objects that have just two variables, the positions *x* and
-*y*, and of course *t**i**m**e*. The rule is that the positions evolve
-completely randomly.
+description and start with English. We model a system that consists of 1000 objects that have just two variables, the positions *x* and
+*y*, and of course *time*. The rule is that the positions evolve
+completely randomly (from a particulat Gaussian distribution).
 
 ``` r
 initialize_system <- function() {
@@ -373,18 +375,18 @@ The state/phase space looks just like you’d expect.
 Cellular automata
 -----------------
 
-Now, again, we modify the previous system a bit.
+Now, again, we modify the previous system a bit to demonstrate *interaction* between observational units.
 
 The mathematical description is not very interesting so, in English, we
 model a system of 1600 objects packed on a grid, or cells, in the same
 two-dimensional space with variables *x* and *y*. This time we also add
-a third variable *a* and allow *interaction* between the objects. The
-basic rule for the system is that if an object has *a* = 0, it will
-switch to *a* = 1 *only if* four or more of its neighbours have *a* = 1.
-Otherwise the object has always *a* = 0. The positions of the objects
+a third variable *a* and allow interaction between the objects. The
+basic rule for the system is that if an object has *a = 0*, it will
+switch to *a = 1* only if four or more of its neighbours have *a = 1*.
+Otherwise the object has always *a = 0*. The positions of the objects
 don’t change at all.
 
-These kind of systems are called *cellular automata*.
+These kind of systems are called <a href="https://en.wikipedia.org/wiki/Cellular_automaton">cellular automata</a> and they can have very interesting <a href="https://en.wikipedia.org/wiki/Emergence">emergence</a>.
 
 ``` r
 initialize_system <- function() {
@@ -435,7 +437,7 @@ Updating many objects’ state one-by-one when the state depends on many
 other objects’ states can be very expensive computationally. This is a
 major challenge in the field in general.
 
-Visualization time. Since we have three variables, *x*, *y*, and *a*,
+Since we have three variables, *x*, *y*, and *a*,
 and the first two are positions we can use a new visualization trick (in
 this post). Namely, we map *x* and *y* to position on the axes and *a*
 to the color (fill) of the object.
@@ -622,16 +624,16 @@ state given by its variable *c*. The rate of change of the state by time
 *t* depends on the unit’s neighbors’ states (indexed with *j*) like in
 previous models. However, this time we have also the variable *w* that
 is a variable of the *relationships* between the neighbors, noted by the
-*i**j* subscripts. In graph theory language, *c* is a node variable and
+*ij* subscripts. In graph theory language, *c* is a node variable and
 *w* is an edge variable, and because they both change, we have an
 adaptive network model.
 
 This particular model has been developed to be a simplified sociological
 model of groups of people and social contagion.
 
-Let’s simulate a famous network called the karate club that initially
-contains two distinct groups with states *c* = 0.9 and *c* = 0.1 and all
-of the existing relationships have weight *w* = 0.4. As usual, we pick
+Let’s simulate one particular famous network called the karate club that initially
+contains two distinct groups with states *c = 0.9* and *c = 0.1* and all
+of the existing relationships have weight *w = 0.4*. As usual, we pick
 some values for the other parameters and see what happens. (Again, a
 quick and dirty implementation I’m afraid…)
 
@@ -756,7 +758,7 @@ But because agent-based modelling is general, you can basically use it
 as the framework to model the most simple systems too which makes it a
 really powerful tool.
 
-Let’s build a model 200 agents with features *x*, *y*, and *type*. The
+Let’s build a model of 200 agents with features *x*, *y*, and *type*. The
 rule is that the agents jump randomly in the grid until they find a
 neighborhood with a certain proportion of agents of the same type. You
 could think of this as another simple model of social segregation.
@@ -875,17 +877,17 @@ Conclusion
 ----------
 
 In summary, we got some intuition on dynamical equations, cellular
-automata, networks models, and agent-based models. To cotinue your
+automata, networks models, and agent-based models. To continue your
 journey to the wonderful world of complex systems, I recommend reading
-the book
-[here](https://textbooks.opensuny.org/introduction-to-the-modeling-and-analysis-of-complex-systems/).
+the Hiroki Sayama's book
+[here](https://textbooks.opensuny.org/introduction-to-the-modeling-and-analysis-of-complex-systems/) next.
 
 <img src="sayama-fig-2.5.png" width="456" />
 
 Extra notes
 -----------
 
-I used the following packages and functions in the post.
+I used the following R packages and functions in the post.
 
 ``` r
 library(tidyverse)

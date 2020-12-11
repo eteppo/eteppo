@@ -1,4 +1,4 @@
-+++
-title = "Students 4 Best Evidence"
-external_link = "https://www.students4bestevidence.net/author/eero-teppo/"
++++ 
+title = "Students 4 Best Evidence" 
+external_link = "https://s4be.cochrane.org/blog/author/eero-teppo/" 
 +++

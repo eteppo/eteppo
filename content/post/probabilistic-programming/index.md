@@ -31,8 +31,8 @@ tfpl = tfp.layers
 tfpd = tfp.distributions
 # initialize model as a sequence of two layers
 model = tfkm.Sequential([
-	# bias + weight * input using layer component
-	# no activation or regularizers, default initializers
+  # bias + weight * input using layer component
+  # no activation or regularizers, default initializers
   tfkl.Dense(units = 1, use_bias = True),
   # Dense's output is the mean of the Gaussian distribution
   tfpl.DistributionLambda(lambda mean: tfpd.Normal(loc = mean, scale = 1))
@@ -42,10 +42,10 @@ def evaluate(truth, prediction):
   return -prediction.log_prob(truth)
 # initialize a version of Adam who is good at finding the best program
 optimizer = tfko.Adam(
-	learning_rate = 0.01, 
-	beta_1 = 0.9, 
-	beta_2 = 0.999, 
-	amsgrad = False
+  learning_rate = 0.01, 
+  beta_1 = 0.9, 
+  beta_2 = 0.999, 
+  amsgrad = False
 )
 # run optimization
 model.compile(optimizer = optimizer, loss = evaluate)
