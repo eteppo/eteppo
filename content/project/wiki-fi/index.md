@@ -1,4 +1,4 @@
 +++
 title = "Finnish Wikipedia"
-external_link = "https://fi.wikipedia.org/wiki/Toiminnot:Muokkaukset/Ectotep"
+external_link = "https://fi.wikipedia.org/wiki/Toiminnot:Muokkaukset/Eteppo"
 +++
