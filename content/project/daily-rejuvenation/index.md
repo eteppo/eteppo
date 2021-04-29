@@ -4,7 +4,7 @@ summary = "Follow the progress in rejuvenation medicine one summary at a time."
 date = "2021-04-29"
 +++
 
-## Aging and rejuvenation – a modular epigenome model
+### Aging and rejuvenation – a modular epigenome model
 
 One way to define the concept of biological age is to think of it as the progressive decline in the potential to maintain an equilibrium or steady state.
 
@@ -21,5 +21,6 @@ Unfortunately, experimental evidence is still scarce. For example, old human ski
 The model of epigenetically driven aging will remain, no doubt, a major area of focus in the field for the near future.
 
 *Chiavellini P, Canatelli-Mallat M, Lehmann M, et al. Aging and rejuvenation - a modular epigenome model. Aging (Albany NY). 2021;13(4):4734-4746. doi:10.18632/aging.202712*
-URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7950254/
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7950254/
 
