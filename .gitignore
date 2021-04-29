@@ -1,3 +1,2 @@
-# local builds
+# Note: the resources-folder is included as a workaround for a Netlify issue.
 public/
-# Note: the locally built resources/ is included as a Netlify workaround.
