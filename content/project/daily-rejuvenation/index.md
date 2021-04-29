@@ -20,5 +20,6 @@ Unfortunately, experimental evidence is still scarce. For example, old human ski
 
 The model of epigenetically driven aging will remain, no doubt, a major area of focus in the field for the near future.
 
-*Chiavellini P, Canatelli-Mallat M, Lehmann M, et al. Aging and rejuvenation - a modular epigenome model. Aging (Albany NY). 2021;13(4):4734-4746. doi:10.18632/aging.202712 (URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7950254/)*
+*Chiavellini P, Canatelli-Mallat M, Lehmann M, et al. Aging and rejuvenation - a modular epigenome model. Aging (Albany NY). 2021;13(4):4734-4746. doi:10.18632/aging.202712*
+URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7950254/
 
