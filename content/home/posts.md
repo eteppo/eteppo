@@ -4,6 +4,7 @@ headless = true
 active = true
 weight = 1
 title = "Blog"
+subtitle = "Short explanations of important scientific topics."
 
 [content]
   page_type = "post"

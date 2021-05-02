@@ -20,7 +20,7 @@ increasing complexity and see the models in action for ourselves.
 > development of emergent behavior at macroscopic scales. - Hiroki
 > Sayama
 
-<img src="sayama-fig-2.5.png" width="456" />
+![](sayama-fig-2.5.png)
 
 Exponential growth
 ------------------
@@ -30,7 +30,7 @@ variable called *x*, a parameter called *a*, and the time *t*. This
 system follows a simple rule that can be described in the language of
 mathematics like this.
 
-<img src="system-1-math.png" width="300" />
+![](system-1-math.png)
 
 In English, the value of *x* at any time point *t* is always it’s value
 at the previous time point multiplied by some number *a*.
@@ -72,9 +72,7 @@ return).
 
 ![](system-1.gif)
 
-If you think equations like this can't have complex behaviours, I recommend to watch the Veritasium video below on the so-called logistic map. It is truly fascinating.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ovJcsL7vyrk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+If you think equations like this can't have complex behaviours, I recommend to watch the [Veritasium video on logistic map](https://www.youtube.com/embed/ovJcsL7vyrk). It is truly fascinating.
 
 Cyclical behaviour
 ------------------
@@ -82,7 +80,7 @@ Cyclical behaviour
 The next one will be a bit cooler. We’ll add another variable, *y*, and
 pick the following rule.
 
-<img src="system-2-math.png" width="444" />
+![](system-2-math.png)
 
 The programmatic representation is very similar to the previous one.
 
@@ -133,7 +131,7 @@ What if we want to model time continuously instead? We can use
 differential equations. Let’s try a so-called logistic population growth
 model.
 
-<img src="system-3-math.png" width="247" />
+![](system-3-math.png)
 
 In English, the rate of change of the variable *x* in time *t* at any
 particular state is given by the seemingly random calculation on the
@@ -193,7 +191,7 @@ Let’s keep adding complexity slowly. This time we take two variables,
 equation that demonstrates us a complex behaviour called a
 *bifurcation*, which is a sudden change in a system caused by a small smooth change is a parameter value.
 
-<img src="system-4-math.png" width="287" />
+![](system-4-math.png)
 
 Once again, we represent the same system as a program and simulate it
 with some initial values. This time we also check multiple values of
@@ -247,7 +245,7 @@ So that’s much more stable! Can you guess what happens with *r = 1*?
 ![](system-4-3.gif)
 
 Just by comparing those animations you get a pretty good intuition of
-what bifurcations are. *r* is a bifurcation parameters.
+what bifurcations are. *r* is a bifurcation parameter.
 
 Chaos
 -----
@@ -256,7 +254,7 @@ We’re slowly working towards more and more complex systems. Now we’ll
 level up our game to one of the most famous models that shows us
 *chaotic* behaviour, Lorenz equations.
 
-<img src="system-5-math.png" width="235" />
+![](system-5-math.png)
 
 Let’s pick some values for the parameters *s*, *r*, and *b*, and initial
 values of 1 for all variables *x*, *y*, and *z*, and write the program
@@ -386,7 +384,7 @@ switch to *a = 1* only if four or more of its neighbours have *a = 1*.
 Otherwise the object has always *a = 0*. The positions of the objects
 don’t change at all.
 
-These kind of systems are called <a href="https://en.wikipedia.org/wiki/Cellular_automaton">cellular automata</a> and they can have very interesting <a href="https://en.wikipedia.org/wiki/Emergence">emergence</a>.
+These kind of systems are called [cellular automata](https://en.wikipedia.org/wiki/Cellular_automaton) and they can have very interesting [emergence](https://en.wikipedia.org/wiki/Emergence).
 
 ``` r
 initialize_system <- function() {
@@ -456,7 +454,7 @@ that can be mathematically described with some new (in this post)
 technology called *partial differential equations*. We’ll play with the
 following model.
 
-<img src="system-8-math.png" width="444" />
+![](system-8-math.png)
 
 This system has two variables *u* and *v* for each point in (*x*, *y*),
 and time *t*, as well as a total of 8 parameters,
@@ -617,7 +615,7 @@ complex sets of assumptions.
 
 We’ll model and simulate the following adaptive network model.
 
-<img src="system-9-math.png" width="401" />
+![](system-9-math.png)
 
 In natural language, we have a bunch of units indexed with *i* with some
 state given by its variable *c*. The rate of change of the state by time
@@ -882,7 +880,7 @@ journey to the wonderful world of complex systems, I recommend reading
 the Hiroki Sayama's book
 [here](https://textbooks.opensuny.org/introduction-to-the-modeling-and-analysis-of-complex-systems/) next.
 
-<img src="sayama-fig-2.5.png" width="456" />
+![](sayama-fig-2.5.png)
 
 Extra notes
 -----------

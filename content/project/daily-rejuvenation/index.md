@@ -1,10 +1,25 @@
 +++
 title = "Daily Rejuvenation"
+subtitle = "Follow the progress in rejuvenation medicine one summary at a time."
 summary = "Follow the progress in rejuvenation medicine one summary at a time."
-date = "2021-04-29"
+date = "2021-05-02"
 +++
 
+### Pluripotent Stem Cell-Based Cell Therapy — Promise and Challenges
+
+[Yamanaka, S. (2020). Pluripotent Stem Cell-Based Cell Therapy—Promise and Challenges. Cell stem cell, 27(4), 523-531.](https://doi.org/10.1016/j.stem.2020.09.014)
+
+Pluripotent stem cells (induced [iPSC] or embryonic [ESC]) have been already studied in many human clinical trials for at least 14 medical conditions. However, three major problems exist until the production of good stem cell therapies will be possible: tumorigenicity (PSC cause tumours), immunogenicity (PSC get rejected), and heterogeneity (too much variation in PSCs).
+
+To prevent tumours, one needs to make sure that the reprogramming factors deactivate, the cells differentiate properly to the correct cell types, and the cell culturing processes don't cause cancer-causing mutations. When producing cell products, one can use antibody-based cell sorting systems, after finding markers that distinguish differentiated and undifferentiated cell types of interest. Tumour formation could be also suppressed after transplantation with inhibitor drugs, intentional HLA mismatch, or suicide genes. Cancer-causing reprogramming factors need to be avoided. Finally, to avoid cancer-causing mutations, one first needs to know which specific mutations in which part of the genome cause cancer in a significant degree in which tissues. Most mutations – even in well-known protein-coding genes – are still 'of unknown significance'. 
+
+Immunogenicity can be probably addressed by using iPSC derived from the patient's own cells but this has many economic and production problems for the time being (2020). Some tissues like the brain and the eye are so 'immune-privileged' that a larger variety of transplations may be possible there. HLA haplotype matching may slightly reduce rejection; such an infrastructure is already in place in clinical hematology (haplotype banking). Another way might be to 'cloak' the HLA regions by deleting common or rejection-critical components or transactivators or by replacing components with less reactive chimeric versions. Otherwise, the patients need to be kept on strong immunosuppressant for the rest of their lives, which has its own harms to weigh against potential benefits of the treatment.
+
+Heterogeneity of embryonic stem cells between and within mice species can be reduced with a so-called 2i-treatment that seems to erase DNA methylations and bring the cells into a similar 'ground state' or 'naive state' (in contrast to 'primed state'). Similar combinations of growth factor inhibitors have been found for human cells. For now, these treatments seem to make the naive cells' DNA more instable as well as erase their imprinted patterns, so the approach needs to be developed further.
+
 ### Aging and rejuvenation – a modular epigenome model
+
+[Chiavellini P, Canatelli-Mallat M, Lehmann M, et al. Aging and rejuvenation - a modular epigenome model. Aging (Albany NY). 2021;13(4):4734-4746. doi:10.18632/aging.202712](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7950254/)
 
 One way to define the concept of biological age is to think of it as the progressive decline in the potential to maintain an equilibrium or steady state.
 
@@ -19,8 +34,3 @@ Now, combining these ideas, one model to consider is that the epigenetic clock i
 Unfortunately, experimental evidence is still scarce. For example, old human skin fibroblasts can be transformed to the pluripotent state with known dedifferention factors and then back to skin fibroblasts with known differentiation factor. The resulting cells will be just like young human skin fibroblasts. Damage in the old cells is not critical enough not to be repaired in the process. This intervention is called cell rejuvenation by cell reprogramming. Some human trials have explored the effects of different non-reprogramming interventions on the epigenetic clocks in different tissues.
 
 The model of epigenetically driven aging will remain, no doubt, a major area of focus in the field for the near future.
-
-*Chiavellini P, Canatelli-Mallat M, Lehmann M, et al. Aging and rejuvenation - a modular epigenome model. Aging (Albany NY). 2021;13(4):4734-4746. doi:10.18632/aging.202712*
-
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7950254/
-

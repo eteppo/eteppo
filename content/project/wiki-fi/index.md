@@ -1,5 +1,5 @@
 +++
-title = "Wikipedia in Finnish"
-summary = "Improve medical articles."
-external_link = "https://fi.wikipedia.org/wiki/Toiminnot:Muokkaukset/Eteppo"
+title = "Wikipedia"
+summary = "Improve open medical knowledge."
+external_link = "https://fi.wikipedia.org/wiki/Käyttäjä:Eteppo"
 +++
