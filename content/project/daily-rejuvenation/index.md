@@ -2,8 +2,18 @@
 title = "Daily Rejuvenation"
 subtitle = "Follow the progress in rejuvenation medicine one summary at a time."
 summary = "Follow the progress in rejuvenation medicine one summary at a time."
-date = "2021-05-02"
+date = "2021-05-06"
 +++
+
+### Organelle-Specific Autophagy in Cellular Aging and Rejuvenation
+
+[Butsch, T. J., Ghosh, B., & Bohnert, K. A. (2021). Organelle-Specific Autophagy in Cellular Aging and Rejuvenation. Advances in Geriatric Medicine and Research, 3(2).](https://agmr.hapres.com/UpLoad/PdfFile/AGMR_1386.pdf)
+
+The autophagy-lysosome system removes and recycles damaged structures in cells. This process is down- and upregulated in response to the level of stress. During aging, cells accumulate damaged structures until the they fail irrepairably. Thus, if one could somehow increase the functioning of the autophagy-lysosome system, this would be expected to rejuvenate the cells and the tissues that they make up. Such effects can be in fact observed in many organisms with some interventions; the problem that remains is how to do it effectively in humans. How?
+
+Surprisingly little is known about the molecular biology of endoplasmic reticulum, peroxisome, nucleus, and lysosome turnover in humans, in contrast to the turnover of mitochondria (mitophagy). A good approach to learn about these mechanisms is to study cells that use them naturally. For example, reproductive cells, including oocytes, can reset damaged organelles and molecules across generations. Stem cells induce autophagy as part of the system that maintains their regenerative capacity; and the same processes occur when producing induced pluripotent cells. The most well-known substances that are known to induce autophagy include rapamycin, torin1, PP242, curcumin, metformin, resveratrol, trehalose, spermidine, lithium, carbamazepine, and valproic acid. Similarly, known autophagy inhibitors include chloroquine, lys05, wortmannin, bafilomycin A1, spautin-1, and DBeQ.
+
+Understanding the system that manages organelle turnover in cells more accurately will likely be crucial moving forward in order to develop effective rejuvenation therapies.
 
 ### Pluripotent Stem Cell-Based Cell Therapy — Promise and Challenges
 
